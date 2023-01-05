@@ -1088,7 +1088,7 @@ h1.collection-hero__title {
   background-color: var(--red) !important;
   border: 1px solid var(--black);
   color: var(--black);
-  border-radius: none !important;
+  border-radius: 0 !important;
 }
 .cart-notification .ufe-checkout-btns button span {
   color: var(--black);
