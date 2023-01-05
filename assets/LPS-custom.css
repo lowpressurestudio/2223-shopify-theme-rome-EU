@@ -815,7 +815,7 @@ h1.collection-hero__title {
 
 .lps-product-upsell .ufe-widget {
   background-color: var(--light-grey);
-  padding: 2rem 3rem;
+  padding: 0;
   position: relative;
 }
 .lps-product-upsell .ufe-trigger-product {
