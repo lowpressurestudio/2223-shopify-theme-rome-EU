@@ -861,7 +861,7 @@ h1.collection-hero__title {
   color: var(--black);
 	text-align: start;
 	font-size: 3rem;
-	padding: 0 0 0 3rem; 
+	padding: 2rem 0 2rem 3rem; 
   margin: 0;
   
 }
@@ -950,20 +950,20 @@ h1.collection-hero__title {
 .lps-product-upsell .ufe-trigger-product {
   margin-top: 1em;
 }
+.lps-product-upsell .ufe-widget .ufe-offer,
+.lps-product-upsell .ufe-widget .ufe-footer {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 
 @media (min-width: 991px) {
-  .lps-product-upsell .ufe-widget .ufe-offer,
-  .lps-product-upsell .ufe-widget .ufe-footer {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
   .lps-product-upsell .ufe-widget:before {
     position: absolute;
     top: 10%;
     left: 2rem;
-    padding-left: 0;
+	  padding: 0; 
   	font-size: 3rem;
-}
+  }
   /* hide mobile background */
   .lps-product-upsell .ufe-core .bundleWrapper:after {
     display: none;
@@ -1005,7 +1005,7 @@ h1.collection-hero__title {
 .lps-product-upsell .upsellWrapper .bundleWrapper .offerOptionsWrap {
   display: inline-block !important;
   width: 8% !important;
-  margin: 20px 0;
+  margin: 5px 0;
 }
 .lps-product-upsell .upsellWrapper .bundleWrapper  .upsellBody .upsellImg,
 .lps-product-upsell .upsellWrapper .bundleWrapper  .upsellBody .upsellContent {
@@ -1016,6 +1016,9 @@ h1.collection-hero__title {
   width: calc(60% - 12px) !important;
 }
 @media (min-width: 991px) {
+  .lps-product-upsell .upsellWrapper .bundleWrapper .offerOptionsWrap {
+    margin: 20px 0;
+  }
   .lps-product-upsell .upsellWrapper .bundleWrapper .upsellBody {
     width: 46% !important;
   }
