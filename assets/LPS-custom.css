@@ -965,7 +965,7 @@ h1.collection-hero__title {
   .lps-product-upsell .ufe-style-inpage:before {
     content: '';
     display: block;
-    width: 60%;
+    width: 55%;
     height: 0;
     padding-bottom: 25%;
 		/* background-image: url(https://cdn.shopify.com/s/files/1/0523/1597/9927/files/upsell-test.png?v=1664446479); */
@@ -974,8 +974,8 @@ h1.collection-hero__title {
     background-position: left center;
   }
 	.lps-product-upsell .ufe-style-inpage .ufe-wrap {
-    width: 40%;
-    max-width: 40%;
+    width: 45%;
+    max-width: 45%;
 	}
 }
 
