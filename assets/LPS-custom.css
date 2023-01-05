@@ -1020,7 +1020,7 @@ h1.collection-hero__title {
 }
 .lps-product-upsell .upsellWrapper .bundleWrapper  .upsellBody .upsellImg span {
   width: 100% !important;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 3 / 4;
 }
 .lps-product-upsell .upsellWrapper .bundleWrapper  .upsellBody .upsellContent .upsellTitle {
   margin-bottom: 0 !important;
