@@ -1006,7 +1006,13 @@ h1.collection-hero__title {
   vertical-align: middle; 
   width: 100% !important;
   text-align: left !important;
+  padding-left: 3rem;
 }  
+@media (min-width: 991px) {
+  .lps-product-upsell .upsellWrapper .bundleWrapper .upsellBody {
+    padding-left: 0;
+  }  
+}
 .lps-product-upsell .upsellWrapper .bundleWrapper .offerOptionsWrap {
   display: inline-block !important;
   width: 8% !important;
