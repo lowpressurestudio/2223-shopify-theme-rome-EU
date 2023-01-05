@@ -966,8 +966,8 @@ h1.collection-hero__title {
     padding-bottom: 25%;
 		/* background-image: url(https://cdn.shopify.com/s/files/1/0523/1597/9927/files/upsell-test.png?v=1664446479); */
 		background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
+    background-size: contain;
+    background-position: left center;
   }
 	.lps-product-upsell .ufe-style-inpage .ufe-wrap {
     width: 40%;
