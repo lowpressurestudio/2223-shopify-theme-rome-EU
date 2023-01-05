@@ -813,6 +813,9 @@ h1.collection-hero__title {
 
 /* UFE UPSELL */
 
+.lps-product-upsell div:empty {
+  display: none;
+}
 .lps-product-upsell .ufe-widget {
   background-color: var(--light-grey);
   padding: 0;
