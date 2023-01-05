@@ -852,7 +852,7 @@ h1.collection-hero__title {
   content: 'Perfect Match';
   display: block;
   width: 100%;
-  /* font-family: "HaasMedium", monospace, sans-serif !important; */
+  font-family: "GibsonSemibold", monospace, sans-serif !important;
   color: var(--black);
 	text-align: start;
 	font-size: 3rem;
