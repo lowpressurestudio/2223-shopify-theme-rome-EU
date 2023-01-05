@@ -695,11 +695,11 @@ h1.collection-hero__title {
 }
 .btn-primary {
   background-color: var(--red);
-  color: var(--black);
+  color: var(--white);
   border: none;
 }
 .btn-primary a {
-  color: var(--black);
+  color: var(--white);
 }
 .btn-primary:hover {
   background-color: var(--black);
