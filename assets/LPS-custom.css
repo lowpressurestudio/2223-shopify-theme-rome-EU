@@ -942,6 +942,11 @@ h1.collection-hero__title {
 }
 
 @media (min-width: 991px) {
+  .lps-product-upsell .ufe-widget .ufe-offer,
+  .lps-product-upsell .ufe-widget .ufe-footer {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
   .lps-product-upsell .ufe-widget:before {
     position: absolute;
     top: 10%;
