@@ -946,8 +946,8 @@ h1.collection-hero__title {
   } */
   .lps-product-upsell .ufe-widget:before {
     position: absolute;
-    top: 2rem;
-    left: 3rem;
+    top: 10%;
+    left: 15%;
   }
   /* hide mobile background */
   .lps-product-upsell .ufe-core .bundleWrapper:after {
