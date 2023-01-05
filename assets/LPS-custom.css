@@ -853,8 +853,9 @@ h1.collection-hero__title {
   color: var(--black);
 	text-align: start;
 	font-size: 3rem;
-	padding: 0; 
+	padding: 0 0 0 3rem; 
   margin: 0;
+  
 }
 .lps-product-upsell .ufe-core .popTitle {
   padding: 0 !important;
@@ -941,13 +942,11 @@ h1.collection-hero__title {
 }
 
 @media (min-width: 991px) {
-  /* .lps-product-upsell .ufe-widget {
-    padding: 0 3rem;
-  } */
   .lps-product-upsell .ufe-widget:before {
     position: absolute;
     top: 10%;
     left: 15%;
+    padding-left: 0;
   }
   /* hide mobile background */
   .lps-product-upsell .ufe-core .bundleWrapper:after {
