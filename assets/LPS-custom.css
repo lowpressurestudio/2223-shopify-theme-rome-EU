@@ -698,6 +698,9 @@ h1.collection-hero__title {
   color: var(--black);
   border: none;
 }
+.btn-primary a {
+  color: var(--black);
+}
 .btn-primary:hover {
   background-color: var(--black);
   color: var(--white);
