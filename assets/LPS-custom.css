@@ -697,8 +697,10 @@ h1.collection-hero__title {
   background-color: var(--red);
   color: var(--white);
   border: none;
+  font-family: Gibson,monospace,sans-serif !important;
 }
 .btn-primary a {
+  font-family: Gibson,monospace,sans-serif !important;
   color: var(--white); 
 }
 .btn-primary:hover {
