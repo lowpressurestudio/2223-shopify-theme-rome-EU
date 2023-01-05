@@ -70,15 +70,15 @@
         "padding_bottom": 36
       }
     },
-    "1646919750ed86b419": {
-      "type": "LPS-product-details-snowboard",
-      "settings": {
-      }
-    },
     "fe01faf1-f851-4a6c-93cf-014894365aa8": {
       "type": "LPS-product-upsell",
       "settings": {
         "title": "Complete the Set"
+      }
+    },
+    "1646919750ed86b419": {
+      "type": "LPS-product-details-snowboard",
+      "settings": {
       }
     },
     "1648553390df3c7966": {
@@ -139,8 +139,8 @@
   },
   "order": [
     "main",
-    "1646919750ed86b419",
     "fe01faf1-f851-4a6c-93cf-014894365aa8",
+    "1646919750ed86b419",
     "1648553390df3c7966",
     "1647352089a055962c",
     "165409839460cb2117",
