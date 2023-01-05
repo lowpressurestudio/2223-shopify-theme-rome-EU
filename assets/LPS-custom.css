@@ -879,6 +879,7 @@ h1.collection-hero__title {
 }
 .lps-product-upsell .ufe-core .chkout.ufe-btn {
 	background: var(--red) !important;
+  border-radius: 0;
 }
 .lps-product-upsell .ufe-core .chkout span {
   color: var(--black);
