@@ -976,11 +976,6 @@ h1.collection-hero__title {
 
 /* snowboard bundle (not set) upsell */
 
-/* temp — dev only */
-.lps-product-upsell .cbtns-bg div:last-child {
-  display: none !important;
-}
-/* END temp — dev only */
 .lps-product-upsell .bundleWrapper {
   /* padding-top: 20px; */
 }
