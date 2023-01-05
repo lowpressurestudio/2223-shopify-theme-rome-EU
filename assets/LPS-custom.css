@@ -1001,9 +1001,6 @@ h1.collection-hero__title {
   display: inline-block !important;
   vertical-align: middle; 
 }
-.lps-product-upsell .upsellWrapper .bundleWrapper  .upsellBody .upsellImg {
-  width: 40% !important;
-}
 .lps-product-upsell .upsellWrapper .bundleWrapper  .upsellBody .upsellContent {
   width: calc(60% - 12px) !important;
 }
