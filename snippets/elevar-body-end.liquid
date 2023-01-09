@@ -51,12 +51,14 @@
 }
 ;
 
-      if (config.event_config.save_order_notes) {
-        await window.ElevarGtmSuite.handlers.cartAttributesReconcile(cartData, config.consent_enabled);
-      }
+      await window.ElevarGtmSuite.handlers.cartAttributesReconcile(
+        cartData,
+        config.event_config.save_order_notes,
+        config.consent_enabled
+      );
 
       if (config.event_config.user) {
-        window.ElevarGtmSuite.handlers.user({
+        const data = {
   {%- if checkout -%}
     cartTotal: "{{- checkout.total_price | times: 0.01 | json -}}",
     currencyCode: {{- checkout.currency | json -}},
@@ -83,11 +85,15 @@
       tags: {{- customer.tags | join: ', ' | json -}}
     }
   {%- endif -%}
-});
+};
+        window.ElevarGtmSuite.handlers.user(data);
       }
 
       if (config.event_config.product_add_to_cart_ajax) {
-        window.ElevarGtmSuite.handlers.productAddToCartAjax(config.event_config.save_order_notes, config.consent_enabled);
+        window.ElevarGtmSuite.handlers.productAddToCartAjax(
+          config.event_config.save_order_notes,
+          config.consent_enabled
+        );
       }
 
       if (config.event_config.cart_reconcile) {
@@ -95,16 +101,16 @@
       }
 
       {%- if request.page_type == "cart" -%}
-        if (config.event_config.cart_view) {
-          window.ElevarGtmSuite.handlers.cartView(cartData);
-        }
-        if (config.event_config.product_remove_from_cart) {
-          window.ElevarGtmSuite.handlers.productRemoveFromCart(cartData);
-        }
+      if (config.event_config.cart_view) {
+        window.ElevarGtmSuite.handlers.cartView(cartData);
+      }
+      if (config.event_config.product_remove_from_cart) {
+        window.ElevarGtmSuite.handlers.productRemoveFromCart(cartData);
+      }
       {%- endif -%}
 
       {%- if collection and template.name == "collection" -%}
-        const collectionItems = {%- if collection and template.name == "collection" -%}
+      const data = {%- if collection and template.name == "collection" -%}
   {
     currencyCode: {{- cart.currency.iso_code | json -}},
     items: [
@@ -133,16 +139,16 @@
   }
 {%- endif -%};
 
-        if (config.event_config.collection_view) {
-          window.ElevarGtmSuite.handlers.collectionView(collectionItems);
-        }
-        if (config.event_config.product_select) {
-          window.ElevarGtmSuite.handlers.productSelect(collectionItems);
-        }
+      if (config.event_config.collection_view) {
+        window.ElevarGtmSuite.handlers.collectionView(data);
+      }
+      if (config.event_config.product_select) {
+        window.ElevarGtmSuite.handlers.productSelect(data);
+      }
       {%- endif -%}
 
       {%- if search.performed -%}
-        const searchItems = {%- if search.performed -%}
+      const data = {%- if search.performed -%}
   {
     currencyCode: {{- cart.currency.iso_code | json -}},
     items: [
@@ -174,19 +180,41 @@
 {%- endif -%}
 ;
 
-        if (config.event_config.search_results_view) {
-          window.ElevarGtmSuite.handlers.searchResultsView(searchItems);
-        }
-        if (config.event_config.product_select) {
-          window.ElevarGtmSuite.handlers.productSelect(searchItems);
-        }
+      if (config.event_config.search_results_view) {
+        window.ElevarGtmSuite.handlers.searchResultsView(data);
+      }
+      if (config.event_config.product_select) {
+        window.ElevarGtmSuite.handlers.productSelect(data);
+      }
       {%- endif -%}
 
       {%- if product -%}
-        const product = {%- if product -%}
+      const data = {%- if product -%}
   {
     attributes: {{- cart.attributes | json -}},
     currencyCode: {{- cart.currency.iso_code | json -}},
+    {% assign default_variant = product.selected_or_first_available_variant %}
+    {%- if default_variant != blank -%}
+      defaultVariant: {
+        {%- if default_variant.sku != blank -%}
+          id: {{- default_variant.sku | json -}},
+        {%- else -%}
+          id: "{{- default_variant.id | json -}}",
+        {%- endif -%}
+        name: {{- product.title | json -}},
+        brand: {{- product.vendor | json -}},
+        category: {{- product.type | json -}},
+        variant: {{- default_variant.title | json -}},
+        price: "{{- default_variant.price | times: 0.01 | json -}}",
+        productId: "{{- product.id | json -}}",
+        variantId: "{{- default_variant.id | json -}}",
+        compareAtPrice: "{{- default_variant.compare_at_price | times: 0.01 | json -}}",
+        image: {{- product.featured_image | json -}},
+        inventory: "{{- default_variant.inventory_quantity -}}"
+      },
+    {%- else -%}
+      defaultVariant: null,
+    {%- endif -%}
     items: [
       {%- for variant in product.variants -%}
         {
@@ -211,12 +239,16 @@
   }
 {%- endif -%};
 
-        if (config.event_config.product_view) {
-          window.ElevarGtmSuite.handlers.productView(product);
-        }
-        if (config.event_config.product_add_to_cart) {
-          window.ElevarGtmSuite.handlers.productAddToCartForm(product, config.event_config.save_order_notes, config.consent_enabled);
-        }
+      if (config.event_config.product_view) {
+        window.ElevarGtmSuite.handlers.productView(data);
+      }
+      if (config.event_config.product_add_to_cart) {
+        window.ElevarGtmSuite.handlers.productAddToCartForm(
+          data,
+          config.event_config.save_order_notes,
+          config.consent_enabled
+        );
+      }
       {%- endif -%}
     };
 
