@@ -17,6 +17,7 @@
         },
         "price": {
           "type": "price",
+          "disabled": true,
           "settings": {
           }
         },
@@ -33,12 +34,14 @@
         },
         "variant_picker": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "picker_type": "button"
           }
         },
         "buy_buttons": {
           "type": "buy_buttons",
+          "disabled": true,
           "settings": {
             "show_dynamic_checkout": true
           }
@@ -70,19 +73,8 @@
         "padding_bottom": 36
       }
     },
-    "fe01faf1-f851-4a6c-93cf-014894365aa8": {
-      "type": "LPS-product-upsell",
-      "settings": {
-        "title": "Complete the Set"
-      }
-    },
     "1646919750ed86b419": {
       "type": "LPS-product-details-snowboard",
-      "settings": {
-      }
-    },
-    "1648553390df3c7966": {
-      "type": "LPS-video-row",
       "settings": {
       }
     },
@@ -90,6 +82,29 @@
       "type": "LPS-product-size-table-snowboard",
       "settings": {
         "note_text_sizing": ""
+      }
+    },
+    "312ce442-6359-4b11-aa39-fc0aade3e2d6": {
+      "type": "LPS-product-details-binding",
+      "settings": {
+      }
+    },
+    "515cacdb-545e-45d5-9cb7-4a64fe611920": {
+      "type": "LPS-product-size-table-binding",
+      "settings": {
+      }
+    },
+    "fe01faf1-f851-4a6c-93cf-014894365aa8": {
+      "type": "LPS-product-upsell",
+      "disabled": true,
+      "settings": {
+        "title": "Complete the Set"
+      }
+    },
+    "1648553390df3c7966": {
+      "type": "LPS-video-row",
+      "disabled": true,
+      "settings": {
       }
     },
     "165409839460cb2117": {
@@ -139,10 +154,12 @@
   },
   "order": [
     "main",
-    "fe01faf1-f851-4a6c-93cf-014894365aa8",
     "1646919750ed86b419",
-    "1648553390df3c7966",
     "1647352089a055962c",
+    "312ce442-6359-4b11-aa39-fc0aade3e2d6",
+    "515cacdb-545e-45d5-9cb7-4a64fe611920",
+    "fe01faf1-f851-4a6c-93cf-014894365aa8",
+    "1648553390df3c7966",
     "165409839460cb2117",
     "product-recommendations",
     "16642769142e2ab362"
