@@ -111,7 +111,7 @@
             {% endfor %}
             
             {% if custom_badge != "" %}
-              <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">{{ custom_badge }}</span>
+              <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }} badge-additional">{{ custom_badge }}</span>
             {%- elsif card_product.available == false -%}
               <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">{{ 'products.product.sold_out' | t }}</span>
             {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
