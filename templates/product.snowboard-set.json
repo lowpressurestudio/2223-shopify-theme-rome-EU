@@ -82,7 +82,7 @@
     "4a2ca0da-59da-41d5-9a0b-2d2c23e4fd16": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"container\">\n<h2>Snowboard Specs<\/h2\n<\/div>",
+        "custom_liquid": "<div class=\"container\">\n<h1>Snowboard Specs<\/h1>\n<\/div>",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
@@ -102,7 +102,7 @@
     "6981db6c-ea47-4cb4-a998-c050064067d5": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"container\">\n<h2>Snowboard Specs<\/h2\n<\/div>",
+        "custom_liquid": "<div class=\"container\">\n<h1>Snowboard Specs<\/h1>\n<\/div>",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
