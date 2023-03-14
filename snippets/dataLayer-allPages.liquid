@@ -243,7 +243,7 @@ __DL__jQueryinterval = setInterval(function(){
         	'checkoutEmail' : {{checkout.email | json}},
         	'currency'  	: {{shop.currency | json}},
         	'pageType'  	: 'Log State',
-        	'event'     	: 'logState'
+        	'event'     	: 'log_state'
     	}
     	dataLayer.push(logState);
     	/**
@@ -325,12 +325,12 @@ __DL__jQueryinterval = setInterval(function(){
         	};          	 
         	dataLayer.push({
             	'pageType' : 'Product',
-            	'event'	: 'view_item',
+            	'event'	: 'view_item_ga4',
        		  ecommerce
        		 });
         	$(__DL__.cartTriggers).click(function(){
    			 dataLayer.push({               	 
-                	'event'	: 'add_to_cart',
+                	'event'	: 'add_to_cart_ga4',
                 	ecommerce
           		 });             	 
         	});         	 
@@ -416,7 +416,7 @@ __DL__jQueryinterval = setInterval(function(){
             	if(Shopify.Checkout.page == "thank_you"){
                 	dataLayer.push({
                 	'pageType' :'Transaction',
-                	'event'	:'purchase',
+                	'event'	:'purchase_ga4',
                 	ecommerce
                 	});
             	}          	 
@@ -485,6 +485,7 @@ __DL__jQueryinterval = setInterval(function(){
 }, 500);
  
 </script> 
+
 
 
 
