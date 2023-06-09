@@ -1,7 +1,29 @@
 {
   "sections": {
+    "165771507594ea817e": {
+      "type": "LPS-image-banner",
+      "settings": {
+        "container-ratio-desktop": "21_9",
+        "container-ratio-mobile": "4_6",
+        "title": "30% Off Summer Sale",
+        "heading_font_size": 42,
+        "heading_alignment": "left top",
+        "cta_1": "Shop Now",
+        "cta_1_link": "shopify:\/\/collections\/rome-snowboards-sale-outlet",
+        "cta_2": "",
+        "cta_2_link": "",
+        "cta_3": "",
+        "cta_3_link": "",
+        "cta_font_size": 22,
+        "bg_image": "shopify:\/\/shop_images\/30_summer_sale_desktop.jpg",
+        "bg_image_mobile": "shopify:\/\/shop_images\/30_summer_sale_mobile.jpg",
+        "bg_alignment": "center center",
+        "bg_color": "#f0f0f0"
+      }
+    },
     "1aae0057-a0ec-4d24-ba72-64a39ae06c13": {
       "type": "LPS-video-banner",
+      "disabled": true,
       "settings": {
         "video": "https:\/\/www.youtube.com\/watch?v=zVbCwgHdZ0I",
         "title": "Shop the 20th Anniversary Collection",
@@ -123,28 +145,6 @@
         "container-ratio-desktop": "18_9",
         "container-ratio-mobile": "4_6",
         "seconds": 10
-      }
-    },
-    "165771507594ea817e": {
-      "type": "LPS-image-banner",
-      "disabled": true,
-      "settings": {
-        "container-ratio-desktop": "21_9",
-        "container-ratio-mobile": "4_6",
-        "title": "New Title",
-        "heading_font_size": 36,
-        "heading_alignment": "left top",
-        "cta_1": "Men",
-        "cta_1_link": "shopify:\/\/collections\/mens-snowboard-bindings",
-        "cta_2": "Women",
-        "cta_2_link": "shopify:\/\/collections\/womens-snowboard-bindings",
-        "cta_3": "Youth",
-        "cta_3_link": "shopify:\/\/collections\/kids-snowboard-bindings",
-        "cta_font_size": 14,
-        "bg_image": "shopify:\/\/shop_images\/home-banner-bindings.jpg",
-        "bg_image_mobile": "shopify:\/\/shop_images\/home-banner-bindings-mobile.jpg",
-        "bg_alignment": "center center",
-        "bg_color": "#f0f0f0"
       }
     },
     "1661961727d501f386": {
@@ -358,9 +358,9 @@
     }
   },
   "order": [
+    "165771507594ea817e",
     "1aae0057-a0ec-4d24-ba72-64a39ae06c13",
     "166240761103031986",
-    "165771507594ea817e",
     "1661961727d501f386",
     "16619651454bf58995",
     "16619652767958e6ca",
