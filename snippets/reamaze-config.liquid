@@ -40,3 +40,49 @@
   };
 </script>
 <!-- reamaze_embeddable_16685_e -->
+
+
+<!-- reamaze_cue_94149_s -->
+<!-- Cue - Need Help? -->
+<script type="text/javascript">
+  var _support = _support || { 'ui': {}, 'user': {} };
+  _support.outbounds = _support.outbounds || [];
+  _support.outbounds.push({
+    id: "94149",
+    name: "Need Help?",
+    message: "Hey, Do you need help with anything?",
+    sound: true,
+    transient: false,
+    botsEnabled: true,
+    disableCueClick: false,
+    enableCustomFields: false,
+    start: "",
+    end: "",
+    user: {
+      type: "team"
+    },
+    buttons: [
+      {
+        text: "No thanks! Just browsing",
+        dismiss: true
+      },
+      {
+        text: "Yes, please!",
+        response: true
+      },
+    ],
+    rules: [
+      {
+        type: "url",
+        op: "contains",
+        value: "https://eu.romesnowboards.com/products",
+      },
+      {
+        type: "timeOnPage",
+        op: "greaterThan",
+        value: "10s",
+      },
+    ],
+  });
+</script>
+<!-- reamaze_cue_94149_e -->
