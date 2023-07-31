@@ -1,0 +1,89 @@
+<!-- Reamaze Config file - DO NOT REMOVE -->
+<script type="text/javascript">
+  var _support = _support || { 'ui': {}, 'user': {} };
+  _support.account = "rome-eu";
+</script>
+
+<!-- reamaze_embeddable_16685_s -->
+<!-- Embeddable - Rome EU Chat / Contact Form Shoutbox -->
+<script type="text/javascript">
+  var _support = _support || { 'ui': {}, 'user': {} };
+  _support['account'] = 'rome-eu';
+  _support['ui']['contactMode'] = 'default';
+  _support['ui']['enableKb'] = 'true';
+  _support['ui']['styles'] = {
+    widgetColor: 'rgb(234, 19, 30)',
+  };
+  _support['ui']['shoutboxFacesMode'] = 'custom';
+  _support['ui']['faces'] = ["https://cdn.shopify.com/s/files/1/0370/4055/4115/t/6/assets/ROME_STAR_STACK-21.png",""];
+  _support['ui']['shoutboxHeaderLogo'] = true;
+  _support['ui']['widget'] = {
+    img: 'https://cdn.shopify.com/s/files/1/0370/4055/4115/t/6/assets/Rome-Snowboards-ReAmaze-Icon-2.png',
+    displayOn: 'all',
+    fontSize: 'default',
+    allowBotProcessing: true,
+    label: false,
+    position: {
+      bottom: '70px',
+      right: '22px'
+    },
+    size: '60',
+    mobilePosition: {
+      bottom: '70px',
+      right: '22px'
+    }
+  };
+  _support['apps'] = {
+    faq: {"enabled":true},
+    recentConversations: {},
+    orders: {"enabled":true,"enable_notes":false}
+  };
+</script>
+<!-- reamaze_embeddable_16685_e -->
+
+
+
+<!-- reamaze_cue_94149_s -->
+<!-- Cue - Need Help? -->
+<script type="text/javascript">
+  var _support = _support || { 'ui': {}, 'user': {} };
+  _support.outbounds = _support.outbounds || [];
+  _support.outbounds.push({
+    id: "94149",
+    name: "Need Help?",
+    message: "Hey, Do you need help with anything?",
+    sound: true,
+    transient: false,
+    botsEnabled: true,
+    disableCueClick: false,
+    enableCustomFields: false,
+    start: "",
+    end: "",
+    user: {
+      type: "team"
+    },
+    buttons: [
+      {
+        text: "No thanks! Just browsing",
+        dismiss: true
+      },
+      {
+        text: "Yes, please!",
+        response: true
+      },
+    ],
+    rules: [
+      {
+        type: "url",
+        op: "contains",
+        value: "https://eu.romesnowboards.com/products",
+      },
+      {
+        type: "timeOnPage",
+        op: "greaterThan",
+        value: "10s",
+      },
+    ],
+  });
+</script>
+<!-- reamaze_cue_94149_e -->
